@@ -14579,7 +14579,30 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Set-Up-Authentication">Set Up Authentication<a class="anchor-link" href="#Set-Up-Authentication">&#182;</a></h2><p><a href="https://stackoverflow.com/questions/44328277/how-to-auth-to-google-cloud-using-service-account-in-python">reference</a></p>
+<h1 id="Google-Natural-Language-API-test">Google Natural Language API test<a class="anchor-link" href="#Google-Natural-Language-API-test">&#182;</a></h1><h2 id="%E4%B8%BB%E8%A6%81%E6%B8%AC%E8%A9%A6%E4%BB%BB%E5%8B%99">&#20027;&#35201;&#28204;&#35430;&#20219;&#21209;<a class="anchor-link" href="#%E4%B8%BB%E8%A6%81%E6%B8%AC%E8%A9%A6%E4%BB%BB%E5%8B%99">&#182;</a></h2><p>利用Google nlp API進行文本情感分析（<code>analyze_sentiment</code>）、實體辨識（<code>analyze_entities</code>）、句構分析（<code>analyze_syntax</code>）與文本分類（<code>classify_text</code>）測試</p>
+<h2 id="%E6%B8%AC%E8%A9%A6%E5%89%8D%E6%BA%96%E5%82%99">&#28204;&#35430;&#21069;&#28310;&#20633;<a class="anchor-link" href="#%E6%B8%AC%E8%A9%A6%E5%89%8D%E6%BA%96%E5%82%99">&#182;</a></h2><ol>
+<li>啟用Google Cloud Natural Language API （啟用教學可參考<a href="https://segmentfault.com/a/1190000014216330">此篇</a>）</li>
+<li>Python &gt;=3.6</li>
+<li>Google Cloud Natural Language API client Python library -&gt; google-cloud-language</li>
+</ol>
+<h2 id="%E6%B8%AC%E8%A9%A6%E6%AD%A5%E9%A9%9F">&#28204;&#35430;&#27493;&#39519;<a class="anchor-link" href="#%E6%B8%AC%E8%A9%A6%E6%AD%A5%E9%A9%9F">&#182;</a></h2><ol>
+<li>Set Up Authentication</li>
+<li>Test APIs</li>
+</ol>
+<h2 id="Reference">Reference<a class="anchor-link" href="#Reference">&#182;</a></h2><p>皆參考<a href="https://cloud.google.com/natural-language/docs/reference/rpc/google.cloud.language.v1">官方文件</a>與相關sample code，但官方文件可能許久未維護，有些範例程式並不可用，因此需稍加修改才能使用</p>
+<hr>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="1.-Set-Up-Authentication">1. Set Up Authentication<a class="anchor-link" href="#1.-Set-Up-Authentication">&#182;</a></h2><p><a href="https://stackoverflow.com/questions/44328277/how-to-auth-to-google-cloud-using-service-account-in-python">reference</a></p>
 
 </div>
 </div>
@@ -14617,7 +14640,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Test-APIs">Test APIs<a class="anchor-link" href="#Test-APIs">&#182;</a></h2><blockquote><p>官方的<a href="https://cloud.google.com/natural-language/">試用api頁面</a>其實也不錯</p>
+<h2 id="2.-Test-APIs">2. Test APIs<a class="anchor-link" href="#2.-Test-APIs">&#182;</a></h2><blockquote><p>官方的<a href="https://cloud.google.com/natural-language/">試用api頁面</a>其實也不錯</p>
 </blockquote>
 
 </div>
@@ -14647,7 +14670,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="client.analyze_sentiment--%3E-%E5%81%9A%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90">client.analyze_sentiment -&gt; &#20570;&#24773;&#24863;&#20998;&#26512;<a class="anchor-link" href="#client.analyze_sentiment--%3E-%E5%81%9A%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90">&#182;</a></h3>
+<h3 id="2.1-client.analyze_sentiment--%3E-%E5%81%9A%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90">2.1 client.analyze_sentiment -&gt; &#20570;&#24773;&#24863;&#20998;&#26512;<a class="anchor-link" href="#2.1-client.analyze_sentiment--%3E-%E5%81%9A%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14719,7 +14742,7 @@ Sentiment Score: 0.8999999761581421
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="client.analyze_entities--%3E-%E5%81%9A%E5%AF%A6%E9%AB%94%E8%BE%A8%E8%AD%98">client.analyze_entities -&gt; &#20570;&#23526;&#39636;&#36776;&#35672;<a class="anchor-link" href="#client.analyze_entities--%3E-%E5%81%9A%E5%AF%A6%E9%AB%94%E8%BE%A8%E8%AD%98">&#182;</a></h3>
+<h3 id="2.2-client.analyze_entities--%3E-%E5%81%9A%E5%AF%A6%E9%AB%94%E8%BE%A8%E8%AD%98">2.2 client.analyze_entities -&gt; &#20570;&#23526;&#39636;&#36776;&#35672;<a class="anchor-link" href="#2.2-client.analyze_entities--%3E-%E5%81%9A%E5%AF%A6%E9%AB%94%E8%BE%A8%E8%AD%98">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14833,7 +14856,7 @@ Mention type: COMMON
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="client.analyze_syntax--%3E-%E5%81%9A%E8%AA%9E%E5%8F%A5%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90">client.analyze_syntax -&gt; &#20570;&#35486;&#21477;&#32080;&#27083;&#20998;&#26512;<a class="anchor-link" href="#client.analyze_syntax--%3E-%E5%81%9A%E8%AA%9E%E5%8F%A5%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90">&#182;</a></h3>
+<h3 id="2.3-client.analyze_syntax--%3E-%E5%81%9A%E8%AA%9E%E5%8F%A5%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90">2.3 client.analyze_syntax -&gt; &#20570;&#35486;&#21477;&#32080;&#27083;&#20998;&#26512;<a class="anchor-link" href="#2.3-client.analyze_syntax--%3E-%E5%81%9A%E8%AA%9E%E5%8F%A5%E7%B5%90%E6%A7%8B%E5%88%86%E6%9E%90">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15088,7 +15111,7 @@ Label: P
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<span class="tex2jax_ignore"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" id="44675e019bbe47f0a343d25e8d27438a-0" class="displacy" width="1010" height="137.0" direction="ltr" style="max-width: none; height: 137.0px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr">
+<span class="tex2jax_ignore"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" id="e3a44e0040bf4712bcd58f685d9e00b0-0" class="displacy" width="1010" height="137.0" direction="ltr" style="max-width: none; height: 137.0px; color: #000000; background: #ffffff; font-family: Arial; direction: ltr">
 <text class="displacy-token" fill="currentColor" text-anchor="middle" y="47.0">
     <tspan class="displacy-word" fill="currentColor" x="50">普通</tspan>
     <tspan class="displacy-tag" dy="2em" fill="currentColor" x="50">ADJ</tspan>
@@ -15164,7 +15187,7 @@ Label: P
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="client.classify_text--%3E-%E5%81%9A%E6%96%87%E5%AD%97%E5%88%86%E9%A1%9E">client.classify_text -&gt; &#20570;&#25991;&#23383;&#20998;&#39006;<a class="anchor-link" href="#client.classify_text--%3E-%E5%81%9A%E6%96%87%E5%AD%97%E5%88%86%E9%A1%9E">&#182;</a></h3><blockquote><p>但不支援中文（The language zh-Hant is not supported for classify_text analysis.）</p>
+<h3 id="2.4-client.classify_text--%3E-%E5%81%9A%E6%96%87%E6%9C%AC%E5%88%86%E9%A1%9E">2.4 client.classify_text -&gt; &#20570;&#25991;&#26412;&#20998;&#39006;<a class="anchor-link" href="#2.4-client.classify_text--%3E-%E5%81%9A%E6%96%87%E6%9C%AC%E5%88%86%E9%A1%9E">&#182;</a></h3><blockquote><p>但不支援中文（The language zh-Hant is not supported for classify_text analysis.）</p>
 </blockquote>
 
 </div>
